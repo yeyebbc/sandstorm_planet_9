@@ -16,6 +16,7 @@ copy_file() {
 
 	startup_path="${INSURGENCY_SERVER_PATH}/startup.sh"
 	game_path="${INSURGENCY_SERVER_PATH}/Insurgency/Saved/Config/LinuxServer/Game.ini"
+	engine_path="${INSURGENCY_SERVER_PATH}/Insurgency/Saved/Config/LinuxServer/Engine.ini"
 
 	admins_path="${INSURGENCY_SERVER_PATH}/Insurgency/Config/Server/Admins.txt"
 	map_cycle_path="${INSURGENCY_SERVER_PATH}/Insurgency/Config/Server/MapCycle.txt"
@@ -26,6 +27,7 @@ copy_file() {
 	# 将git目录文件复制到实际目录
 	sudo cp $CONFIG_PATH/startup.sh $startup_path
 	sudo cp $CONFIG_PATH/Game.ini $game_path
+	sudo cp $CONFIG_PATH/Engine.ini $engine_path
 	sudo cp $CONFIG_PATH/Admins.txt $admins_path
 	sudo cp $CONFIG_PATH/MapCycle.txt $map_cycle_path
 	sudo cp $CONFIG_PATH/Motd.txt $motd_path
