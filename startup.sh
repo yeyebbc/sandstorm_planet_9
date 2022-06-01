@@ -1,0 +1,1 @@
+Insurgency/Binaries/Linux/InsurgencyServer-Linux-Shipping Prison?Scenario=Scenario_Prison_Checkpoint_Security?MaxPlayers=12 -Port=8001 -QueryPort=8003 -hostname="[第九行星]YeYe在召唤 硬核1.1" -log -LogCmds="LogGameplayEvents Log" -GameStatsToken=GAME_STATS_TOKEN_PLACE_HOLDER -NoEAC -mutators=ImprovedAI,SlowCaptureTimes,SlowMovement
