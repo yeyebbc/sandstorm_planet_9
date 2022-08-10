@@ -58,8 +58,8 @@ echo "正在结束sissm进程..."
 kill_process_by_keyword "sissm"
 
 echo "正在结束Insurgency进程..."
-kill_process_by_keyword "startup.sh"
-sleep 3
+kill_process_by_keyword "Insurgency"
+sleep 6
 
 
 copy_file
