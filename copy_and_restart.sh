@@ -67,13 +67,13 @@ copy_file
 sleep 1
 echo "正在启动Insurgency进程..."
 sudo chmod +x $INSURGENCY_SERVER_PATH/startup.sh
-screen -dm bash -c "cd $INSURGENCY_SERVER_PATH;./startup.sh"
+tmux send -t game "cd $INSURGENCY_SERVER_PATH;./startup.sh" ENTER
 
 sleep 6
 
 echo "正在启动sissm进程..."
 sudo chmod +x $SISSM_PATH/sissm
-screen -dm bash -c "cd $SISSM_PATH;./sissm sissm.cfg"
+tmux send -t sissm "cd $SISSM_PATH;./sissm sissm.cfg" ENTER
 
 echo "重启完毕！"
 
