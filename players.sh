@@ -1,4 +1,5 @@
-
+# mcrcon 放到/usr/bin 就可以全局任意位置执行
+# sudo mv mcrcon /usr/bin/
 format_convert(){
     count=0
     str="Name Score NetID IP\n"
@@ -22,6 +23,6 @@ format_convert(){
 
 
 
-contents=`./mcrcon -H $SERVER_HOST -P $MCRCON_PORT -p $MCRCON_PASS listplayers`
+contents=`mcrcon -H $SERVER_HOST -P $MCRCON_PORT -p $MCRCON_PASS listplayers`
 format_convert $contents
 

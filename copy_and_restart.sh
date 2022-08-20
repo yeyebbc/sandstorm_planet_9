@@ -53,11 +53,30 @@ copy_file() {
 kill_process_by_keyword(){
 	kill -9 $(ps -ef|grep $1|gawk '$0 !~/grep/ {print $2}' |tr -s '\n' ' ')
 }
+
+
+init(){
+     is_inited=`tmux ls|grep process`
+     if [ "$is_inited" == "" ]; then
+	echo "创建tmux窗口"
+        tmux &
+	tmux new -s sissm -d
+        tmux new -s game -d
+        tmux new -s process -d
+               
+ 	echo "启动自动重启游戏脚本"
+        tmux send -t process "cd $CONFIG_PATH;./listen_process.sh" ENTER
+     fi
+	
+}
+
+
 if [ -f restart.lock ];then
-echo "请先删除restart.lock"
-exit
+    echo "请先删除restart.lock"
+    exit
 fi
 
+init
 
 touch restart.lock
 
