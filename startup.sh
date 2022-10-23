@@ -14,4 +14,4 @@ name2=${a[1]}
 final_map="${name2}?Scenario=Scenario_${name1}_Checkpoint_${name3}"
 echo "本次重启随机地图:${final_map}"
 
-Insurgency/Binaries/Linux/InsurgencyServer-Linux-Shipping ${final_map}?Game=CheckpointHardcore?MaxPlayers=8 -Port=8001 -QueryPort=8003 -hostname="[第九行星]YeYe 二服 地狱1.1" -log -LogCmds="LogGameplayEvents Log" -GameStatsToken=53F414E2C6EF40288470CE230BC4FC8A -NoEAC -mutators=ImprovedAI,SlowCaptureTimes
+Insurgency/Binaries/Linux/InsurgencyServer-Linux-Shipping ${final_map}?Game=CheckpointHardcore?MaxPlayers=16 -Port=8001 -QueryPort=8003 -hostname="[第九行星]YeYe 三服 地狱1.1" -log -LogCmds="LogGameplayEvents Log" -GameStatsToken=53F414E2C6EF40288470CE230BC4FC8A -NoEAC -mutators=ImprovedAI,SlowCaptureTimes
