@@ -15,5 +15,6 @@ final_map="${name2}?Scenario=Scenario_${name1}_Checkpoint_${name3}"
 echo "本次重启随机地图:${final_map}"
 
 
-Insurgency/Binaries/Linux/InsurgencyServer-Linux-Shipping Prison?Scenario=Scenario_Prison_Checkpoint_Security?MaxPlayers=8 -Port=8001 -QueryPort=8003 -hostname="[第九行星]YeYe 二服 测试" -log -LogCmds="LogGameplayEvents Log" -GameStatsToken=E83EFA9BDCD34829A8B18298C420E9BA -NoEAC -mutators=ImprovedAI,NPMod,HardcoreHUD,FpLegs,SlowCaptureTimes,ThermalVision -Mods ModDownloadTravelTo=TORO?Scenario=Scenario_TORO_Checkpoint_Insurgents
+Insurgency/Binaries/Linux/InsurgencyServer-Linux-Shipping Tell?Scenario=Scenario_Tell_Checkpoint_Security?MaxPlayers=8 -Port=8001 -QueryPort=8003 -hostname="[第九行星]YeYe 二服 测试" -log -LogCmds="LogGameplayEvents Log" -GameStatsToken=E83EFA9BDCD34829A8B18298C420E9BA -NoEAC -mutators=ImprovedAI,SlowCaptureTimes,SlowMovement
 
+# Insurgency/Binaries/Linux/InsurgencyServer-Linux-Shipping Tell?Scenario=Scenario_Tell_Checkpoint_Security?MaxPlayers=8 -Port=8001 -QueryPort=8003 -hostname="[第九行星]YeYe 二服 测试" -log -LogCmds="LogGameplayEvents Log" -GameStatsToken=E83EFA9BDCD34829A8B18298C420E9BA -NoEAC -mutators=ImprovedAI,NPMod,HardcoreHUD,FpLegs,SlowCaptureTimes,ThermalVision -Mods ModDownloadTravelTo=TORO?Scenario=Scenario_TORO_Checkpoint_Insurgents
