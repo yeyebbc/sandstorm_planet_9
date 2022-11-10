@@ -2,7 +2,7 @@ port: 1080
 socks-port: 1081 
 allow-lan: false
 mode: Rule
-log-level: info
+log-level: silent
 external-controller: 127.0.0.1:9090
 secret: ""
 dns:
@@ -32,11 +32,11 @@ dns:
       - +.gvt1.com
 proxies:
   - 
-    name: TY1-1
+    name: AU1-1
     type: trojan
-    server: ty1-1.nigirocloud.com
+    server: au1-1.vegemitepie.com
     port: 443
-    password: 
+    password: hqjjeKWzYt2k8yEZFC
     alpn:
       - h2
       - http/1.1
@@ -46,7 +46,7 @@ proxy-groups:
     name: Proxy
     type: select
     proxies:
-      - TY1-1
+      - AU1-1
 rules:
   - DOMAIN-SUFFIX,googleapis.cn,Proxy
   - DOMAIN-SUFFIX,mod.io,Proxy
