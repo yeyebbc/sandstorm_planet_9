@@ -23,6 +23,7 @@ copy_file() {
 	admins_path="${INSURGENCY_SERVER_PATH}/Insurgency/Config/Server/Admins.txt"
 	map_cycle_path="${INSURGENCY_SERVER_PATH}/Insurgency/Config/Server/MapCycle.txt"
 	motd_path="${INSURGENCY_SERVER_PATH}/Insurgency/Config/Server/Motd.txt"
+	mods_path="${INSURGENCY_SERVER_PATH}/Insurgency/Config/Server/Mods.txt"
 
 	sissm_cfg_path="${SISSM_PATH}/sissm.cfg"
 
@@ -33,6 +34,7 @@ copy_file() {
 	cp $CONFIG_PATH/Admins.txt $admins_path
 	cp $CONFIG_PATH/MapCycle.txt $map_cycle_path
 	cp $CONFIG_PATH/Motd.txt $motd_path
+	cp $CONFIG_PATH/Mods.txt $mods_path
 	cp $CONFIG_PATH/sissm.cfg $sissm_cfg_path
 
 	# 将占位字符替换成实际内容
