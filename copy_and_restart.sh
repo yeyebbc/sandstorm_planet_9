@@ -9,7 +9,13 @@
 # export INSURGENCY_SERVER_PATH=沙暴服务器路径（例如/home/steam/Steam/steamapps/common/sandstorm_server）
 # export SISSM_PATH=/home/steam/sissm
 # 最后在命令行执行source /etc/profile，让配置生效
+# =========每天7点自动重启配置如下==========
+#执行crontab -e
+#输入00 07 * * * /home/steam/config/sandstorm_planet_9/copy_and_restart.sh
+#让其生效/sbin/service crond restart
 
+
+source /etc/profile
 
 copy_file() {
 	# 功能：将配置目录下的配置文件，复制到实际相应的目录中
