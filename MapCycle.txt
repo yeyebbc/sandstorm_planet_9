@@ -62,6 +62,6 @@
 
 (Scenario="Scenario_Prison_Checkpoint_Insurgents",Lighting="Night",Mode="Checkpoint")
 
-(Scenario="Scenario_TORO_Checkpoint_Security",Lighting="Night",Mode="Checkpoint")
+(Scenario="Scenario_LastLight_Checkpoint_Security",Lighting="Night",Mode="Checkpoint")
 
-(Scenario="Scenario_TORO_Checkpoint_Insurgents",Lighting="Night",Mode="Checkpoint")
+(Scenario="Scenario_LastLight_Checkpoint_Insurgents",Lighting="Night",Mode="Checkpoint")
