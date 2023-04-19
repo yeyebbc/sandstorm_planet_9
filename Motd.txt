@@ -1,6 +1,6 @@
 1. Zombies at night.
 2. Lots of ammo.
-3. Very low friendly damage. 
-4. Not allowed glitches of C-4 or M-83 smoke grenade.
+3. Very low friendly fire damage. 
+4. Not allowed the use of ammunition bug of underbarrel upgrades.
 
 QQ group: 561191299
