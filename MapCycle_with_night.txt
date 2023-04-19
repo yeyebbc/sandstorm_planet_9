@@ -91,5 +91,5 @@
 (Scenario="Scenario_Prison_Checkpoint_Security",Lighting="Day")
 (Scenario="Scenario_Prison_Checkpoint_Security",Lighting="Night")
 
-(Scenario="Scenario_Prison_Checkpoint_Insurgents",Lighting="Day")
-(Scenario="Scenario_Prison_Checkpoint_Insurgents",Lighting="Night")
+(Scenario="Scenario_LastLight_Checkpoint_Insurgents",Lighting="Day")
+(Scenario="Scenario_LastLight_Checkpoint_Insurgents",Lighting="Night")
