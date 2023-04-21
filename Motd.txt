@@ -1,6 +1,11 @@
-1. Zombies at night.
-2. Lots of ammo.
-3. Very low friendly fire damage. 
-4. Not allowed the use of ammunition bug of underbarrel upgrades.
 
-QQ group: 561191299
+
+
+- ISMC + 僵尸.
+- 多備彈.
+- 0.01 友軍傷害倍率. 
+- 禁止利用下掛附件刷彈藥的 bug..
+
+
+
+QQ 群組: 561191299, KOOK 服務器: 62359260.
