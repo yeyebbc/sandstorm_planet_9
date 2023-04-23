@@ -1,0 +1,10 @@
+{
+  "events": [
+    {
+      "anyEvent": "log.find(\"kill\")>0",
+      "roundStart": "playerCount>-2",
+      "cmds": [
+      ]
+    }
+  ]
+}

@@ -5,3 +5,8 @@ SSH/Planet_9
 configPlanet9Server.yaml
 .idea/
 config.yaml
+.vscode/
+.vs/
+build/
+__pycache__
+*.pyc
