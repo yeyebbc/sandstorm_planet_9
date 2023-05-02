@@ -97,16 +97,6 @@
 (Scenario="Scenario_Kandagal_Checkpoint_Security",Lighting="Day",Mode="Checkpoint")
 (Scenario="Scenario_Kandagal_Checkpoint_Security",Lighting="Night",Mode="Checkpoint")
 
-(Scenario="Scenario_Panj_Checkpoint_Insurgents",Lighting="Day",Mode="Checkpoint")
-(Scenario="Scenario_Panj_Checkpoint_Insurgents",Lighting="Night",Mode="Checkpoint")
-(Scenario="Scenario_Panj_Checkpoint_Security",Lighting="Day",Mode="Checkpoint")
-(Scenario="Scenario_Panj_Checkpoint_Security",Lighting="Night",Mode="Checkpoint")
-
-(Scenario="Scenario_Peak_Checkpoint_Insurgents",Lighting="Day",Mode="Checkpoint")
-(Scenario="Scenario_Peak_Checkpoint_Insurgents",Lighting="Night",Mode="Checkpoint")
-(Scenario="Scenario_Peak_Checkpoint_Security",Lighting="Day",Mode="Checkpoint")
-(Scenario="Scenario_Peak_Checkpoint_Security",Lighting="Night",Mode="Checkpoint")
-
 (Scenario="Scenario_Market_Checkpoint_Insurgents",Lighting="Day",Mode="Checkpoint")
 (Scenario="Scenario_Market_Checkpoint_Security",Lighting="Day",Mode="Checkpoint")
 
