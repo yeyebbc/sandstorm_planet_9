@@ -115,3 +115,8 @@
 (Scenario="Scenario_Conflict_Checkpoint_Insurgents",Lighting="Night",Mode="Checkpoint",Options="?mutators=\?zCore,ImprovedAI?Label=ImprovedAI")
 (Scenario="Scenario_Conflict_Checkpoint_Security",Lighting="Day",Mode="Checkpoint",Options="?mutators=\?zCore,ImprovedAI?Label=ImprovedAI")
 (Scenario="Scenario_Conflict_Checkpoint_Security",Lighting="Night",Mode="Checkpoint",Options="?mutators=\?zCore,ImprovedAI?Label=ImprovedAI")
+
+(Scenario="Scenario_Coastline_Checkpoint_Insurgents",Lighting="Day",Mode="Checkpoint",Options="?mutators=\?zCore,ImprovedAI?Label=ImprovedAI")
+(Scenario="Scenario_Coastline_Checkpoint_Insurgents",Lighting="Night",Mode="Checkpoint",Options="?mutators=\?zCore,ImprovedAI?Label=ImprovedAI")
+(Scenario="Scenario_Coastline_Checkpoint_Security",Lighting="Day",Mode="Checkpoint",Options="?mutators=\?zCore,ImprovedAI?Label=ImprovedAI")
+(Scenario="Scenario_Coastline_Checkpoint_Security",Lighting="Night",Mode="Checkpoint",Options="?mutators=\?zCore,ImprovedAI?Label=ImprovedAI")
