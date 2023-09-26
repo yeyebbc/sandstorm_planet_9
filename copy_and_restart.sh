@@ -82,8 +82,8 @@ touch restart.lock
 
 echo $(date "+%Y-%m-%d %H:%M:%S")>>$INSURGENCY_SERVER_PATH/restart.log
 
-echo "正在结束sissm进程..."
-kill_process_by_keyword "sissm"
+#echo "正在结束sissm进程..."
+#kill_process_by_keyword "sissm"
 
 echo "正在结束Insurgency进程..."
 kill_process_by_keyword "Insurgency"
@@ -99,13 +99,13 @@ if [ ! -x  $INSURGENCY_SERVER_PATH/startup.sh ];then
 fi
 tmux send -t game "cd $INSURGENCY_SERVER_PATH;./startup.sh" ENTER
 
-sleep 6
+#sleep 6
 
-echo "正在启动sissm进程..."
-if [ ! -x  $SISSM_PATH/sissm ];then
-    sudo chmod +x $SISSM_PATH/sissm
-fi
-tmux send -t sissm "cd $SISSM_PATH;./sissm sissm.cfg" ENTER
+#echo "正在启动sissm进程..."
+#if [ ! -x  $SISSM_PATH/sissm ];then
+#    sudo chmod +x $SISSM_PATH/sissm
+#fi
+#tmux send -t sissm "cd $SISSM_PATH;./sissm sissm.cfg" ENTER
 
 echo "重启完毕！"
 
