@@ -24,7 +24,6 @@ copy_file() {
 	map_cycle_path="${INSURGENCY_SERVER_PATH}/Insurgency/Config/Server/MapCycle.txt"
 	motd_path="${INSURGENCY_SERVER_PATH}/Insurgency/Config/Server/Motd.txt"
 
-	sissm_cfg_path="${SISSM_PATH}/sissm.cfg"
 
 	# 将git目录文件复制到实际目录
 	cp $CONFIG_PATH/startup.sh $startup_path
@@ -33,16 +32,11 @@ copy_file() {
 	cp $CONFIG_PATH/Admins.txt $admins_path
 	cp $CONFIG_PATH/MapCycle.txt $map_cycle_path
 	cp $CONFIG_PATH/Motd.txt $motd_path
-	cp $CONFIG_PATH/sissm.cfg $sissm_cfg_path
 
 	# 将占位字符替换成实际内容
 	sed -i "s#MCRCON_PASS_PLACE_HOLDER#${MCRCON_PASS}#g" $game_path
 	sed -i "s#MCRCON_PORT_PLACE_HOLDER#${MCRCON_PORT}#g" $game_path
 
-	sed -i "s#MCRCON_PASS_PLACE_HOLDER#${MCRCON_PASS}#g" $sissm_cfg_path
-	sed -i "s#MCRCON_PORT_PLACE_HOLDER#${MCRCON_PORT}#g" $sissm_cfg_path
-	sed -i "s#SERVER_HOST_PLACE_HOLDER#${SERVER_HOST}#g" $sissm_cfg_path
-	sed -i "s#INSURGENCY_SERVER_PATH_PLACE_HOLDER#${INSURGENCY_SERVER_PATH}#g" $sissm_cfg_path
 
 	sed -i "s#GAME_STATS_TOKEN_PLACE_HOLDER#${GAME_STATS_TOKEN}#g" $INSURGENCY_SERVER_PATH/startup.sh
 
@@ -60,7 +54,6 @@ init(){
      if [ "$is_inited" == "" ]; then
 	echo "创建tmux窗口"
         tmux &
-	tmux new -s sissm -d
         tmux new -s game -d
         tmux new -s process -d
                
