@@ -48,3 +48,6 @@
 
 (Scenario="Scenario_LastLight_Checkpoint_Insurgents",Lighting="Day",Mode="CheckpointHardcore")
 (Scenario="Scenario_LastLight_Checkpoint_Security",Lighting="Day",Mode="CheckpointHardcore")
+
+(Scenario="Scenario_Trainyard_Checkpoint_Insurgents",Lighting="Day",Mode="CheckpointHardcore")
+(Scenario="Scenario_Trainyard_Checkpoint_Security",Lighting="Day",Mode="CheckpointHardcore")
