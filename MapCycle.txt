@@ -51,3 +51,7 @@
 
 (Scenario="Scenario_Trainyard_Checkpoint_Security",Lighting="Day")
 (Scenario="Scenario_Trainyard_Checkpoint_Insurgents",Lighting="Day")
+
+(Scenario="Scenario_Forest_Checkpoint_Security",Lighting="Day")
+(Scenario="Scenario_Forest_Checkpoint_Insurgents",Lighting="Day")
+

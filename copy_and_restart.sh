@@ -32,7 +32,6 @@ copy_file() {
 	cp $CONFIG_PATH/Admins.txt $admins_path
 	cp $CONFIG_PATH/MapCycle.txt $map_cycle_path
 	cp $CONFIG_PATH/Motd.txt $motd_path
-	cp $CONFIG_PATH/sissm.cfg $sissm_cfg_path
 
 	# 将占位字符替换成实际内容
 	sed -i "s#MCRCON_PASS_PLACE_HOLDER#${MCRCON_PASS}#g" $game_path
