@@ -33,4 +33,8 @@ fi || exit $?
 
 printf 'Started tmux session %s as %s.\n' "$TMUX_SESSION" "$SERVER_USER"
 printf -v attach_command 'tmux attach-session -t %q' "=$TMUX_SESSION"
-printf 'Attach from root: su - %q -c %q\n' "$SERVER_USER" "$attach_command"
+if [[ "$current_uid" -eq 0 ]]; then
+    printf 'Attach from root: su - %q -c %q\n' "$SERVER_USER" "$attach_command"
+else
+    printf 'Attach: %s\n' "$attach_command"
+fi

@@ -12,7 +12,9 @@
   游戏目录应位于 /home/steam 等普通用户可访问的位置，文件归 SERVER_USER 所有。
 2.在仓库目录执行 ./start_tmux.sh，可使用 root 或 SERVER_USER 运行。
   默认使用 steam 用户创建名为 game 的后台 tmux 会话，可在 .env 中设置 SERVER_USER 和 TMUX_SESSION。
-3.root 查看游戏控制台：su - steam -c 'tmux attach-session -t game'
+3.以 SERVER_USER 运行时，查看游戏控制台：tmux attach-session -t game
+  root 查看游戏控制台：su - steam -c 'tmux attach-session -t game'
+  启动脚本会按当前用户打印对应的连接命令。
   按 Ctrl+b 再按 d 可退出控制台，游戏会继续运行。
   会话已存在时，启动命令会报错；可直接连接已有会话。
 
