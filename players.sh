@@ -1,3 +1,8 @@
+#!/usr/bin/env bash
+
+SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+source "$SCRIPT_DIR/load_env.sh" || exit 1
+require_env SERVER_HOST MCRCON_PORT MCRCON_PASS || exit 1
 
 format_convert(){
     count=0
@@ -22,6 +27,6 @@ format_convert(){
 
 
 
-contents=`mcrcon -H $SERVER_HOST -P $MCRCON_PORT -p $MCRCON_PASS listplayers`
-format_convert $contents
+contents=$(mcrcon -H "$SERVER_HOST" -P "$MCRCON_PORT" -p "$MCRCON_PASS" listplayers) || exit 1
+format_convert
 
