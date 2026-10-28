@@ -7,6 +7,15 @@
 4.脚本会自动加载 .env；缺少文件或必需变量时会提示并退出。
   .env 已被 Git 忽略，.env.example 只保留配置模板。
 
+在 tmux 中启动游戏
+1.确认游戏和已部署的 startup.sh、load_env.sh、.env 位于 INSURGENCY_SERVER_PATH。
+  游戏目录应位于 /home/steam 等普通用户可访问的位置，文件归 SERVER_USER 所有。
+2.在仓库目录执行 ./start_tmux.sh，可使用 root 或 SERVER_USER 运行。
+  默认使用 steam 用户创建名为 game 的后台 tmux 会话，可在 .env 中设置 SERVER_USER 和 TMUX_SESSION。
+3.root 查看游戏控制台：su - steam -c 'tmux attach-session -t game'
+  按 Ctrl+b 再按 d 可退出控制台，游戏会继续运行。
+  会话已存在时，启动命令会报错；可直接连接已有会话。
+
 更新配置流程
 1.将本仓库git clone到自己电脑
 2.这时就可以在本地修改配置文件了
