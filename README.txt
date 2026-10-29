@@ -35,3 +35,4 @@
 将仓库下的配置文件，复制到实际的游戏目录中，并且重启游戏，可以用它来重启游戏。
 部署时会同时复制 load_env.sh 和 .env 到游戏目录，.env 权限为 600。
 startup.sh 在启动时读取 GAME_STATS_TOKEN，Game.ini 中的 RCON 配置由 .env 填充。
+listen_process.sh 会监控游戏进程；进程退出，或日志显示 Steam 注册失败/连接丢失时，会自动执行 copy_and_restart.sh。

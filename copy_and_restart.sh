@@ -47,11 +47,13 @@ kill_process_by_keyword() {
 }
 
 init() {
-    is_inited=$(tmux ls | grep process)
-    if [ "$is_inited" = "" ]; then
-        echo "创建tmux窗口"
-        tmux &
+    if ! tmux has-session -t game 2>/dev/null; then
+        echo "创建 game tmux 窗口"
         tmux new -s game -d
+    fi
+
+    if ! tmux has-session -t process 2>/dev/null; then
+        echo "创建 process tmux 窗口"
         tmux new -s process -d
 
         echo "启动自动重启游戏脚本"
