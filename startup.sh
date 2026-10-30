@@ -24,4 +24,4 @@ echo "本次重启随机地图:${final_map}"
 
 
 
-Insurgency/Binaries/Linux/InsurgencyServer-Linux-Shipping "${final_map}?Game=Checkpoint?MaxPlayers=10" -Port=8001 -QueryPort=8003 -hostname="[第九行星]重生4服开局1点捡弹药[1.1]10VS50群561191299" -log -LogCmds="all VeryVerbose" "-GameStatsToken=${GAME_STATS_TOKEN}" -NoEAC -EnableCheats -SecurityCode=none -Mods -mutators=SlowMovement,SlowCaptureTimes,HardcoreHUD,ImprovedAI,NoRestrictedArea
+Insurgency/Binaries/Linux/InsurgencyServer-Linux-Shipping "${final_map}?Game=Checkpoint?MaxPlayers=10" -Port=8001 -QueryPort=8003 -hostname="[第九行星]重生4服开局1点捡弹药[1.1]10VS50群561191299" -log -LogCmds="all VeryVerbose" "-GameStatsToken=${GAME_STATS_TOKEN}" -NoEAC -SecurityCode=none -mutators=SlowMovement,SlowCaptureTimes,ImprovedAI
