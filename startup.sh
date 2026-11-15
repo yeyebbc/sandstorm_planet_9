@@ -19,7 +19,7 @@ a=(${rand_map//,/ })
 name1=${a[0]}
 name2=${a[1]}
 
-final_map="${name2}?Scenario=Scenario_${name1}_CheckpointHardcore_${name3}"
+final_map="${name2}?Scenario=Scenario_${name1}_Checkpoint_${name3}?Mode="CheckpointHardcore"
 echo "本次重启随机地图:${final_map}"
 
 
