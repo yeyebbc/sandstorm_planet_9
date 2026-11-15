@@ -19,9 +19,9 @@ a=(${rand_map//,/ })
 name1=${a[0]}
 name2=${a[1]}
 
-final_map="${name2}?Scenario=Scenario_${name1}_Checkpoint_${name3}?Mode=CheckpointHardcore"
+final_map="${name2}?Scenario=Scenario_${name1}_Checkpoint_${name3}"
 echo "本次重启随机地图:${final_map}"
 
+# SlowMovement,
 
-
-Insurgency/Binaries/Linux/InsurgencyServer-Linux-Shipping "${final_map}?Game=Checkpoint?MaxPlayers=10" -Port=8001 -QueryPort=8003 -hostname="[第九行星]重生4服开局1点捡弹药[1.1]10VS50群561191299" -log -LogCmds="all VeryVerbose" "-GameStatsToken=${GAME_STATS_TOKEN}" -NoEAC -SecurityCode=none -mutators=SlowMovement,SlowCaptureTimes,ImprovedAI
+Insurgency/Binaries/Linux/InsurgencyServer-Linux-Shipping "${final_map}?Game=Checkpoint?MaxPlayers=10" -Port=8001 -QueryPort=8003 -hostname="[第九行星]重生4服开局1点捡弹药[1.1]10VS50群561191299" -log -LogCmds="all VeryVerbose" "-GameStatsToken=${GAME_STATS_TOKEN}" -NoEAC -SecurityCode=none -mutators=Hardcore,SlowCaptureTimes,ImprovedAI
