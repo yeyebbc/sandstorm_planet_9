@@ -24,4 +24,4 @@ echo "本次重启随机地图:${final_map}"
 
 # SlowMovement,
 
-Insurgency/Binaries/Linux/InsurgencyServer-Linux-Shipping "${final_map}?Game=CheckpointHardcore?MaxPlayers=10" -Port=8001 -QueryPort=8003 -hostname="[第九行星]4服我要成为CQB高手[1.1]10VS50群561191299" -log -LogCmds="all VeryVerbose" "-GameStatsToken=${GAME_STATS_TOKEN}" -NoEAC -EnableCheats -SecurityCode=none -mutators=Hardcore,Vampirism,SlowCaptureTimes,ImprovedAI
+Insurgency/Binaries/Linux/InsurgencyServer-Linux-Shipping "${final_map}?Game=CheckpointHardcore?MaxPlayers=10" -Port=8001 -QueryPort=8003 -hostname="[第九行星]4服我要成为CQB高手[1.1]10VS50群561191299" -log -LogCmds="all VeryVerbose" "-GameStatsToken=${GAME_STATS_TOKEN}" -NoEAC -EnableCheats -SecurityCode=none -mutators=FullyLoaded,Vampirism,SlowCaptureTimes,ImprovedAI
